@@ -1,20 +1,19 @@
 package JavaPractice;
+
 import java.util.Scanner;
 
-
 public class input {
-    
-    public static void main(String [] args){
-        //  how to take input
 
-        // Scanner sc = new Scanner(System.in);
-        // System.out.print("Input your age = ");
-        // int age = sc.nextInt();
-        // System.out.println(age);
+    public static void main(String[] args) {
+        // Create a scanner object
+        Scanner sc = new Scanner(System.in);
 
-        Scanner sc1 =new Scanner(System.in);
-        System.out.println("Input your Name");
-        String Name = sc1.nextLine();
-        System.out.println(Name);
+        // Take input from the user
+        System.out.print("Input your age = ");
+        int age = sc.nextInt();
+        System.out.println(age);
+
+        // Close the scanner to prevent resource leak
+        sc.close();
     }
 }
